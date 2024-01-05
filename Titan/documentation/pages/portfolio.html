@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Titan - Responsive Creative Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png">
+    <script src="../../template/js/assets/jquery.js"></script>
+  </head>
+  <body>
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="../index.html" class="brand"><img src="../../template/images/logo-titan.svg" alt="" class="brand-default"><img src="../../template/images/logo-titan-white.svg" alt="" class="brand-light"></a>
+          <!-- Menu-->
+          <div class="nav-container classic pull-right">
+            <ul class="navigation-items">
+              <li><a href="../pages/get-started.html">Quick start</a></li>
+              <li><a href="../pages/template-structure.html">Template Structure</a></li>
+              <li> <a href="../pages/cheatsheet.html">Cheatsheet</a></li>
+              <li class="dropdown"> <a href="#">Components </a>
+                <ul class="dropdown-nav">
+                  <li><a href="../pages/titan-slider.html">Titan Slider</a></li>
+                  <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+                  <li><a href="../pages/portfolio.html">The portfolio</a></li>
+                  <li><a href="../pages/hero.html">The hero</a></li>
+                  <li><a href="../pages/contact-form.html">PHP Contactform</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="hero small">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>The portfolio</h1>
+              <p>This page will guide you through the portfolio feature.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="medium">
+        <div class="container content">
+          <div class="row">
+            <div class="col-md-8">   
+              <h3>HTML Structure</h3>
+              <p>For any portfolio grid you add, the HTML will look something like this:</p>
+              <pre>&lt;div class="item-grid"&gt;
+  // The portfolio item
+  &lt;a class="item"&gt;
+    // The Thumbnail
+    &lt;div class="thumb"&gt;lt;/div&gt;
+      &lt;img src="path/to/img" alt="Alt Text"/&gt;
+    // The caption
+    &lt;div class="caption"&gt;
+      &lt;h3&gt;The Title&lt;/div&gt;
+      &lt;div class="tags"&gt; 
+        &lt;div class="tag"&gt;Tag&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;   
+  // A second item
+  &lt;a class="item" ...
+  // Item sizer. Removing this will break the layout!
+  &lt;div class="item-sizer"&gt;&lt;/div&gt;
+&lt;/div&gt;      </pre>
+              <h3>Grid types</h3>
+              <p>Use classes on the ".item-grid" container like ".col-2, .col-3, .col-4" to create columns in the grid.</p>
+              <h4>Masonry</h4>
+              <p>You can also use Masonry if you like, just add the ".masonry" class to the ".item-grid" container.</p>
+              <h4>No spacing</h4>
+              <p>For this, just add the ".no-spacing" class to the container that holds the images.</p>
+              <h3>Item filtering</h3>
+              <p>Review one of the portfolio pages and look for the ".filter-container" div. Every filter that goes into it, has a "data-toggle" attribute. Within this attribute, there is a classname that corresponds with the classname on the element, within the item grid.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../../template/js/assets/bootstrap.js"></script>
+      <script src="../../template/js/assets/imagesloaded.pkgd.min.js"></script>
+      <script src="../../template/js/assets/validation.js"></script>
+      <script src="../../template/js/assets/packery.pkgd.min.js"></script>
+      <script src="../../template/js/assets/velocity.min.js"></script>
+      <script src="../../template/modules/titan-slider/titan-slider.js"></script>
+      <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+      <script src="../../template/js/assets/animsition.js"></script>
+      <script src="../../template/js/functions.js"></script>
+    </div>
+  </body>
+</html>

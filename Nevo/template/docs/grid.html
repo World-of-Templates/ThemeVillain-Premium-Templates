@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nevo — Documentation</title>
+    <meta content="The Documentation." name="description">
+    <!-- Styles-->
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <!-- Scripts -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header-->
+      <header class="header"><a class="brand" href="../docs/index.html"><img alt="Nevo example image" src="../assets/images/logo.svg"><span class="space-2 font-size-2">Documentation</span></a>
+        <!-- Navigation-->
+        <ul class="menu main">
+          <li class="menu-item"><a class="menu-link" href="../docs/getting-started.html">Get started</a></li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="../docs/html.html">Architecture</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="../docs/html.html">HTML</a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/grid.html">Grid</a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/helper-classes.html">Helpers</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="../docs/nevo-slider.html">Plugins</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="../docs/nevo-slider.html">Slider <sup>NEW</sup></a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/nevo-lightbox.html">Lightbox</a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/contact-form.html">Form</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="../docs/updates.html"> <strong>Updates</strong></a></li>
+        </ul>
+      </header>
+      <!-- Burger menu-->
+      <div class="burger">
+        <hr>
+        <hr>
+        <hr>
+      </div>
+      <div class="content">
+        <section class="section-size-4">
+          <div class="container text-center">
+            <h3>The nifty</h3>
+            <h1 class="animated-text">Grid</h1>
+          </div>
+        </section>
+        <section class="section-size-1">
+          <div class="container center">
+            <div class="column-6">
+              <h5>Based on 12 columns</h5>
+              <p>Do practically anything!</p>
+              <div class="space-3"></div>
+            </div>
+          </div>
+          <div class="container text-center text-center-mobile center">
+            <div class="column-6">
+              <div class="grid columns-12 columns-tablet-12 columns-mobile-12 columns-highlighted">
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+                <div class="column">1</div>
+              </div>
+              <div class="grid columns-6 columns-tablet-6 columns-mobile-6 columns-highlighted">
+                <div class="column">2</div>
+                <div class="column">2</div>
+                <div class="column">2</div>
+                <div class="column">2</div>
+                <div class="column">2</div>
+                <div class="column">2</div>
+              </div>
+              <div class="grid columns-3 columns-tablet-3 columns-mobile-3 columns-highlighted">
+                <div class="column">4</div>
+                <div class="column">4</div>
+                <div class="column">4</div>
+              </div>
+              <div class="grid columns-2 columns-tablet-2 columns-mobile-2 columns-highlighted">
+                <div class="column">6</div>
+                <div class="column">6</div>
+              </div>
+              <div class="grid columns-1 columns-tablet-1 columns-mobile-1 columns-highlighted">
+                <div class="column">12</div>
+              </div>
+              <div class="grid columns-highlighted">
+                <div class="column column-6 column-tablet-6 column-mobile-6">6</div>
+                <div class="column column-3 column-tablet-3 column-mobile-3">3</div>
+                <div class="column column-2 column-tablet-2 column-mobile-2">2</div>
+                <div class="column column-1 column-tablet-1 column-mobile-1">1</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-2">
+          <div class="container">
+            <div class="grid center">
+              <div class="column-6">
+                <pre class="prettyprint">div.grid.columns-2
+  .column
+  .column</pre>
+              </div>
+              <div class="column-4 offset-1">
+                <h5>Example for 2 columns</h5>
+                <p>Simply add the .columns-2 class on the grid div. Or use any other number between 1 and 12.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-2">
+          <div class="container">
+            <div class="grid center">
+              <div class="column-6">
+                <pre class="prettyprint">div.grid
+  .column-3
+  .column-2
+  .column-7</pre>
+              </div>
+              <div class="column-4 offset-1">
+                <h5>Variable columns</h5>
+                <p>This is the most common way to add columns. Note: When you add columns worth more than 12, it will break the grid.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-2">
+          <div class="container">
+            <div class="grid center">
+              <div class="column-6">
+                <pre class="prettyprint">div.grid
+  .column-desktop-3.column-tablet-6.column-mobile-6
+  .column-desktop-3.column-tablet-6.column-mobile-6
+  .column-desktop-3.column-tablet-6.column-mobile-6
+  .column-desktop-3.column-tablet-6.column-mobile-6</pre>
+              </div>
+              <div class="column-4 offset-1">
+                <h5>Responsiveness</h5>
+                <p>By default, the grid is responsive in its own way. To take full control over your layout and decide your own grid behavior, use these handy responsive classes. The example shown has 4 columns on desktop and 2 on 2 rows on tablet and mobile.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-size-4 lighter-bg">
+          <div class="container">
+            <div class="grid center"><a class="button tertiairy" href="../docs/helper-classes.html">Next: Helpers</a></div>
+          </div>
+        </section>
+        <section class="section-size-2">
+          <div class="container center">
+            <div class="column-8 text-center">
+              <blockquote> <span>ThemeVillain is always striving for the best possible quality for its templates and themes. If you encounter bugs or need something special done with your template, please contact support@themevillain.com.</span><span class="author">Kaj &mdash; Owner @ ThemeVillain</span></blockquote>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Scripts-->
+    <!-- Core-->
+    <script src="../assets/scripts/core.jquery.js"></script>
+    <!-- Vendor Plugins-->
+    <script src="../assets/scripts/plugin.imagesloaded.pkgd.js"></script>
+    <script src="../assets/scripts/plugin.in-viewport.js"></script>
+    <script src="../assets/scripts/plugin.animate.js"></script>
+    <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script>
+    <script src="../assets/scripts/plugin.ScrollToPlugin.min.js"></script>
+    <script src="../assets/scripts/plugin.SplitText.js"></script>
+    <script src="../assets/scripts/plugin.TweenMax.min.js"></script>
+    <script src="../assets/scripts/plugin.touchSwipe.min.js"></script>
+    <script src="../assets/scripts/plugin.typed.min.js"></script>
+    <!-- Plugins-->
+    <script src="../assets/plugins/nevo-slider/nevo-slider.js"></script>
+    <script src="../assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
+    <script src="../assets/scripts/main.functions.js"></script>
+  </body>
+</html>

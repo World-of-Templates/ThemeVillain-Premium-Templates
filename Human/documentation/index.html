@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentation | Human</title>
+    <meta charset='utf-8'>
+    <meta content='Description' name='description'>
+    <meta content='1 day' name='revisit-after'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href="stylesheets/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic,400italic,700,700italic,900' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet'>
+    <link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js" type="text/javascript"></script>
+    <script src="javascripts/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
+  <body></body>
+  <div class='wrapper'>
+    <!-- Topbar -->
+    <div class='top' data-spy='affix'>
+      <div class='row-fluid'>
+        <div class='branding text-left'>
+          <a href='#'>Documentation</a>
+        </div>
+        <nav>
+          <a class='menu-toggle toggle' href='#'>
+            <div class='bar'></div>
+            <div class='bar'></div>
+            <div class='bar'></div>
+          </a>
+          <ul>
+            <li>
+              <a class='start' href='#start'>Start</a>
+            </li>
+            <li>
+              <a class='home' href='#home'>Home</a>
+            </li>
+            <li>
+              <a class='services' href='#services'>Services</a>
+            </li>
+            <li>
+              <a class='about' href='#about'>About</a>
+            </li>
+            <li>
+              <a class='team' href='#team'>Team</a>
+            </li>
+            <li>
+              <a class='skills' href='#skills'>Skills</a>
+            </li>
+            <li>
+              <a class='projects' href='#projects'>Projects</a>
+            </li>
+            <li>
+              <a class='contact' href='#contact'>Contact</a>
+            </li>
+            <li class='toggle-close toggle'>
+              <a href='#'>
+                <span class='fa fa-times'></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <section class='grey' id='start'>
+      <!-- Getting started -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h1 class='title-block'>Getting started</h1>
+          <p></p>
+          Thank you so much for purchasing Human!
+          We hope you will enjoy it.
+          Human uses the Bootstrap 3.2.0 framework, which means you can use it's extended library of components, aswell as the column structure.
+          To get started, please navigate using the links above.
+          <h3>Sections</h3>
+          <p>Every section is divided with a "section" element, and has an ID. For example, home has "#home" as the section ID. This is used by the anchor links from the menu, where the "href" has the "#home" value. As long as the href value and the ID of the section match, the link will smoothly go to that section.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Home -->
+    <section id='home'>
+      <!-- Howto Home -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='title-block'>How to handle the home section</h2>
+          <p>The home section is built using the Flexslider plugin. If you wish to extend the slider, please review the documentation on <a href="http://www.woothemes.com/flexslider/">the Flexslider website</a>.</p>
+          <h3>Slider</h3>
+          <p>Each slide has a ".slide" class. But it also contains a ".dark" or ".light" class. Use these classes according to the lightness of the background image.</p>
+          <h3>Background image</h3>
+          <p>The background images of the slider have two classes, ".fs" and ".fo". The ".fs" class needs to be there so the image will go fullscreen. The ".fo" class is used for the parallax effect.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class='grey' id='services'>
+      <!-- Howto Services -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='title-block'>Services section</h2>
+          <p>As you might have noticed, the services section has a ".grey" class, which gives the entire section a light grey background.</p>
+          <h3>Service</h3>
+          <p>A service consists of a column structure (see Bootstrap docs) and a ".service" class. Inside, you can find a another row with an icon and info.</p>
+          <h3>FontAwesome icons</h3>
+          <p>The icons used for the services, as well as all the other icons used, are powered by FontAwesome. You can read all about FontAwesome <a href="http://fontawesome.io">here</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section id='about'>
+      <!-- Howto About -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='title-block'>About section</h2>
+          <p>The about section is actually plain simple. It consists of two columns and is filled with dummy content by default. You can edit this section the way you want it. It can even be a whole story!</p>
+        </div>
+      </div>
+    </section>
+    <!-- Team -->
+    <section class='grey' id='team'>
+      <!-- Howto Team -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='title-block'>Team section</h2>
+          <p>Each team member starts with a '.member' element, which you can put inside a Bootstrap column. A member element looks like this:</p>
+          <pre>&lt;div class='member'&gt;&#x000A;	&lt;div class='img'&gt;&#x000A;		&lt;div class='social'&gt;&#x000A;			&lt;div class='icons'&gt;&#x000A;				&lt;a class='icon fa fa-twitter' href='#'&gt;&lt;/a&gt;&#x000A;				&lt;a class='icon fa fa-facebook' href='#'&gt;&lt;/a&gt;&#x000A;				&lt;a class='icon fa fa-instagram' href='#'&gt;&lt;/a&gt;&#x000A;			&lt;/div&gt;&#x000A;		&lt;/div&gt;&#x000A;		&lt;img alt='' src='images/team1.jpg'&gt;&#x000A;	&lt;/div&gt;&#x000A;	&lt;div class='info'&gt;&#x000A;		&lt;h4&gt;Jane Doe&lt;/h4&gt;&#x000A;		&lt;h5&gt;Graphic Designer&lt;/h5&gt;&#x000A;		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;&#x000A;	&lt;/div&gt;&#x000A;&lt;/div&gt;</pre>
+          <p>To link the social icons, simply replace the 'href' value with the social (profile) page URL.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id='skills'>
+      <!-- Howto Skills -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='title-block'>Skills section</h2>
+          <p>The skills progress bars can be shown with the following code:</p>
+          <pre>&lt;div class='progress'&gt;&#x000A;	&lt;div aria-valuemax='100' aria-valuemin='0' aria-valuenow='40' class='progress-bar progress-bar-success' role='progresssbar'&gt;&#x000A;		&lt;span class='sr-only'&gt;&#x000A;			40% Complete (success)&#x000A;		&lt;/span&gt;&#x000A;	&lt;/div&gt;&#x000A;&lt;/div&gt;</pre>
+          <p>Here, look for the 'aria-valuenow' value, which is 40. The bar will jump to 40% width after it's brought inside the viewport.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section class='grey' id='projects'>
+      <!-- Howto Projects -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='title-block'>Projects section</h2>
+          <p>The projects portfolio starts with a container, which has the '.folio' class.</p>
+          <h3>Lightbox links</h3>
+          <p>To activate a lightbox link, simply give the link item the class '.item', like here:</p>
+          <pre>&lt;a class='item' href='link/to/full/image'&gt;&#x000A;	&lt;img src="link/to/thumbnail/image" /&gt;&#x000A;	&lt;div class='caption'&gt;&#x000A;		&lt;h4&gt;Caption title&lt;/h4&gt;&#x000A;		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;&#x000A;	&lt;/div&gt;&#x000A;&lt;/a&gt;</pre>
+          <p>Make sure it links to a full image, using the 'href' value. The caption content will also be used with the lightbox.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id='contact'>
+      <!-- Howto Contact -->
+      <div class='row-fluid'>
+        <div class='col-md-8 col-md-offset-2'>
+          <h2 class='title-block'>Contact section</h2>
+          <p>This last section will cover the contact form and installation.</p>
+          <h3>Contact form</h3>
+          <p>
+            First of all; make sure you run your website on a PHP-enabled server. When all the template files are uploaded to the webserver, the PHP contactform works out-of-the-box. The only thing you will need to change is the receivers' e-mail address.
+            <br>To do that, find the following line inside the <strong>email.php</strong> file from the <strong>php</strong> directory of your template folder:
+          </p>
+          <pre>$to         = 'email@example.com'; //Your e-mail address</pre>
+          <p>
+            Found it? Great! Now the only thing you need to do is change the address <strong>between</strong> the single quotes. And you're done!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class='row-fluid'>
+        <div class='block'>
+          <div class='title-block text-center'>
+            <h4>The end.</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <!-- jQuery -->
+    <script src="javascripts/jquery.min.js" type="text/javascript"></script>
+    <!-- Easing -->
+    <script src="javascripts/jquery.easing.1.3.js" type="text/javascript"></script>
+    <!-- Flexslider -->
+    <script src="javascripts/jquery.flexslider.js" type="text/javascript"></script>
+    <!-- Bootstrap JS -->
+    <script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Waypoints -->
+    <script src="javascripts/waypoints.min.js" type="text/javascript"></script>
+    <!-- Contactform -->
+    <script src="javascripts/validation.js" type="text/javascript"></script>
+    <!-- Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+    <script>
+      var myLatlng = new google.maps.LatLng(52.370943, 4.897673);
+      var mapOptions = {
+      	zoom: 14,
+      	center: myLatlng,
+      	scrollwheel: false,
+          disableDefaultUI: true,
+          draggable: false,
+      	mapTypeId: google.maps.MapTypeId.ROADMAP,
+      	streetViewControl: false
+      };
+      var map = new google.maps.Map(document.getElementById("maps"), mapOptions);
+    </script>
+    <!-- Functions -->
+    <script src="javascripts/functions.js" type="text/javascript"></script>
+  </div>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bone - Creative Agency Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?v=2">
+    <script src="../../template/js/assets/jquery.js"></script>
+  </head>
+  <body>
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="../../template/index.html" class="brand"><img src="../../template/images/logo-black.svg" class="dark-brand"><img src="../../template/images/logo-white.svg" class="light-brand"></a>
+          <!-- Menu-->
+          <ul class="navbar-classic">
+            <li><a href="../pages/get-started.html">Quick start</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li> <a href="../pages/cheatsheet.html">Cheatsheet</a></li>
+            <li><a>Components <span class="caret"></span></a>
+              <ul class="dropdown">
+                <li><a href="../pages/tera-slider.html">Tera Slider</a></li>
+                <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+                <li><a href="../pages/portfolio.html">The portfolio</a></li>
+                <li><a href="../pages/hero.html">The hero</a></li>
+                <li><a href="../pages/contact-form.html">PHP Contactform</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="hero content gray vbottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>The portfolio</h1>
+              <p>This page will guide you through the portfolio feature.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="medium">
+        <div class="container content">
+          <div class="row">
+            <div class="col-md-8">   
+              <h3>HTML Structure</h3>
+              <p>For any portfolio grid you add, the HTML will look something like this:</p>
+              <pre>&lt;div class="grid"&gt;
+  // Grid sizer. Removing this will break the layout!
+  &lt;div class="grid-sizer"&gt;&lt;/div&gt;
+  // The portfolio item
+  &lt;a class="grid-item"&gt;
+    // The background
+    &lt;div class="thumb" style="background-image: url(path/to/image);"&gt;lt;/div&gt;
+    // The caption
+    &lt;div class="caption"&gt;
+      &lt;div class="type"&gt; Type of work &lt;/div&gt;
+      &lt;div class="description"&gt; 
+        &lt;h4&gt;Title&lt;/h4&gt;
+        &lt;p&gt;Description&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;   
+  // A second item
+  &lt;a class="item" ...
+&lt;/div&gt;      </pre>
+              <p>As you can see it's a background image that's showing the thumbnail image. This way, you can use any size and any proportion of the image in your portfolio. No need to resize! Plus, it's retina ready when you add a higher resolution image.</p>
+              <h3>Item proportions</h3>
+              <p>You can easily change an item's proportion by changing it's class. For example:</p>
+              <pre>&lt;div class="grid"&gt;
+  // The portfolio item
+  &lt;a class="item wide"&gt;
+    ...</pre>
+              <p>As you can see it's now using a <strong>".wide"</strong> class, which gives the item twice the width. You could also set the class to <strong>".tall"</strong>, which gives it twice the height!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../../template/js/assets/bootstrap.js"></script>
+      <script src="../../template/js/assets/imagesloaded.pkgd.min.js"></script>
+      <script src="../../template/js/assets/validation.js"></script>
+      <script src="../../template/js/assets/masonry.pkgd.min.js"></script>
+      <script src="../../template/modules/tera-slider/tera-slider.js"></script>
+      <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+      <script src="../../template/js/assets/animsition.js"></script>
+      <script src="../../template/js/functions.js"></script>
+    </div>
+  </body>
+</html>

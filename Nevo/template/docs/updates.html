@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nevo — Documentation</title>
+    <meta content="The Documentation." name="description">
+    <!-- Styles-->
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <!-- Scripts -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header-->
+      <header class="header"><a class="brand" href="../docs/index.html"><img alt="Nevo example image" src="../assets/images/logo.svg"><span class="space-2 font-size-2">Documentation</span></a>
+        <!-- Navigation-->
+        <ul class="menu main">
+          <li class="menu-item"><a class="menu-link" href="../docs/getting-started.html">Get started</a></li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="../docs/html.html">Architecture</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="../docs/html.html">HTML</a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/grid.html">Grid</a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/helper-classes.html">Helpers</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown"><a class="menu-link" href="../docs/nevo-slider.html">Plugins</a>
+            <!-- Dropdown-->
+            <ul class="dropdown-nav">
+              <li class="menu-item"><a class="menu-link" href="../docs/nevo-slider.html">Slider <sup>NEW</sup></a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/nevo-lightbox.html">Lightbox</a></li>
+              <li class="menu-item"><a class="menu-link" href="../docs/contact-form.html">Form</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="../docs/updates.html"> <strong>Updates</strong></a></li>
+        </ul>
+      </header>
+      <!-- Burger menu-->
+      <div class="burger">
+        <hr>
+        <hr>
+        <hr>
+      </div>
+      <div class="content">
+        <section class="section-size-4">
+          <div class="container text-center">
+            <h3>Staying</h3>
+            <h1 class="animated-text">Fresh</h1>
+            <p>This page explains updates and actions that need to be taken.</p>
+          </div>
+          <section class="section-size-2">
+            <div class="container">
+              <div class="grid center">
+                <div class="column-6">
+                  <h5>Version 2.0 &mdash; Big update. December 9, 2018</h5>
+                  <pre class="prettyprint">Nevo 2.0 &mdash; New features!
+
+<b>What is updated?</b>
+- NEW: Nevo Slider. A responsive slider built from the ground up!
+- NEW: Background videos.
+- NEW: Accent color classes.
+- NEW: Back-to-top button.
+- NEW: Added type animation.
+- UPDATE: Multitude of visual fixes on mobile.
+- UPDATE: Enhanced pages.
+- UPDATE: Documentation > Added Nevo Slider
+
+<b>Updating to 2.0</b>
+Additions have been made without changing 
+the core structure. Simply overwrite the js 
+and css core files and use the new features as you like.
+
+Updating to new helper classes:
+- Classes for background and text colors have been changed:
+-- Example: .lighter changed to .lighter-bg</pre>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-size-2">
+            <div class="container">
+              <div class="grid center">
+                <div class="column-6">
+                  <h5>Version 1.2 &mdash; Second update. December 1, 2018</h5>
+                  <pre class="prettyprint">Nevo 1.2 &mdash; Fixes compatibility issues
+
+<b>What is updated?</b>
+- Removed animsition due to imcompatibility
+- Several small cosmetic bugfixes. Details matter!
+
+<b>Impacted files</b>
+- UPDATE: All html files (see below)
+- UPDATE: style.css (assets/styles)
+- UPDATE: main.functions.js (assets/scripts)
+- REMOVED: plugin.animsition.js (assets/scripts)
+
+<b>Updating from 1.0/1.1</b>
+Please make a backup of your website before 
+you migrate the new code.
+
+Step 1. Make sure not to include plugin.animsition.js anymore. 
+This is located at the end of the body tag (1.1) or inside the head (1.0).
+
+Step 2. Replace style.css and main.functions.js with
+the revised 1.2 versions.
+</pre>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-size-2">
+            <div class="container">
+              <div class="grid center">
+                <div class="column-6">
+                  <h5>Version 1.1 &mdash; First update. November 30, 2018</h5>
+                  <pre class="prettyprint">Nevo 1.1 &mdash;  Cosmetic Update
+
+<b>What is new?</b>
+- Refactored page transitions to give a 
+  more stable and smooth experience.
+- Altered animations for thumbnails 
+  to add more feel to the template.
+
+<b>Impacted files</b>
+- UPDATE: All html files (see below)
+- UPDATE: style.css (assets/styles)
+- UPDATE: main.functions.js (assets/scripts)
+- NEW: plugin.animsition.js (assets/scripts)
+
+<b>Updating from 1.0</b>
+Please make a backup of your website before 
+you migrate the new code. 
+
+<b>Step 1</b>
+Change <b>&lt;div class="wrapper"&gt;</b>
+to <b>&lt;div class="wrapper animsition"&gt;</b>
+
+<b>Step 2</b>
+Replace the following files with the new ones:
+- <b>main.functions.js</b>
+- <b>style.css</b>
+
+<b>Step 3</b>
+Add the new transition script to your template:
+- <b>plugin.animsition.js</b> (found in: assets/scripts)
+
+<b>Step 4</b>
+Include the <b>plugin.animsition.js</b> script:
+&lt;script src="assets/scripts/plugin.animsition.js"&gt;&lt;/script&gt;
+Add this right before the main.functions.js gets include inside &lt;head&gt;
+
+<b>Step 5</b>
+Move your scripts to the end of the body. See the new version files for an example.
+
+<b>Pro tip</b>
+Easily do this for all your document files using "find replace all"
+in your editor of choice.</pre>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-size-2">
+            <div class="container">
+              <div class="grid center">
+                <div class="column-6">
+                  <h5>Version 1.0. &mdash; First release on November 11, 2018</h5>
+                  <pre class="prettyprint">1.0 &mdash; Initial version
+November 11, 2018</pre>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-size-2"> 
+            <div class="container pad-2">
+              <div class="grid center"><a class="button tertiairy" href="../docs/index.html">Back to index</a></div>
+            </div>
+          </section>
+        </section>
+        <section class="section-size-2 lighter-bg">
+          <div class="container center">
+            <div class="column-8 text-center">
+              <blockquote> <span>ThemeVillain is always striving for the best possible quality for its templates and themes. If you encounter bugs or need something special done with your template, please contact support@themevillain.com.</span><span class="author">Kaj &mdash; Owner @ ThemeVillain</span></blockquote>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Scripts-->
+    <!-- Core-->
+    <script src="../assets/scripts/core.jquery.js"></script>
+    <!-- Vendor Plugins-->
+    <script src="../assets/scripts/plugin.imagesloaded.pkgd.js"></script>
+    <script src="../assets/scripts/plugin.in-viewport.js"></script>
+    <script src="../assets/scripts/plugin.animate.js"></script>
+    <script src="../assets/scripts/plugin.isotope.pkgd.min.js"></script>
+    <script src="../assets/scripts/plugin.ScrollToPlugin.min.js"></script>
+    <script src="../assets/scripts/plugin.SplitText.js"></script>
+    <script src="../assets/scripts/plugin.TweenMax.min.js"></script>
+    <script src="../assets/scripts/plugin.touchSwipe.min.js"></script>
+    <script src="../assets/scripts/plugin.typed.min.js"></script>
+    <!-- Plugins-->
+    <script src="../assets/plugins/nevo-slider/nevo-slider.js"></script>
+    <script src="../assets/plugins/nevo-lightbox/nevo-lightbox.js"></script>
+    <script src="../assets/scripts/main.functions.js"></script>
+  </body>
+</html>

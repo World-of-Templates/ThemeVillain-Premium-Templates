@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bone - Creative Agency Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?v=2">
+    <script src="../../template/js/assets/jquery.js"></script>
+  </head>
+  <body>
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="../../template/index.html" class="brand"><img src="../../template/images/logo-black.svg" class="dark-brand"><img src="../../template/images/logo-white.svg" class="light-brand"></a>
+          <!-- Menu-->
+          <ul class="navbar-classic">
+            <li><a href="../pages/get-started.html">Quick start</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li> <a href="../pages/cheatsheet.html">Cheatsheet</a></li>
+            <li><a>Components <span class="caret"></span></a>
+              <ul class="dropdown">
+                <li><a href="../pages/tera-slider.html">Tera Slider</a></li>
+                <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+                <li><a href="../pages/portfolio.html">The portfolio</a></li>
+                <li><a href="../pages/hero.html">The hero</a></li>
+                <li><a href="../pages/contact-form.html">PHP Contactform</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="hero content vbottom gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Tera slider 3.1</h1>
+              <p>This page will explain the Tera Slider</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="medium">
+        <div class="container content">
+          <div class="row">
+            <div class="col-md-8">   
+              <h3>HTML Structure</h3>
+              <p>The Tera slider is lightweight and has an easy-to-use HTML structure, as follows:</p>
+              <pre>&lt;div class="slider"&gt;
+  &lt;ul class="slides"&gt;
+    &lt;li class="slide"&gt;
+      // Content slide 1
+    &lt;/li&gt;
+    &lt;li class="slide"&gt;
+      // Content slide 2
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;div&gt;      </pre>
+              <p>Knowing this, you can add as many slides as you want.</p>
+              <h3>Slide background</h3>
+              <p>The slide background is actually a div object that owns a style property with the corresponding background image url. Just like this:</p>
+              <pre>// Inside .slide &gt; section.hero
+&lt;div class="bg" style="background-image:url(url-to-image)"&gt;&lt;/div&gt;   </pre>
+              <h3>Dark mode for dark backgrounds</h3>
+              <p>For light on dark slides, Be has a special class you can add. Add the <strong>".dark"</strong> class to the <strong>&lt;li class="slide"&gt;</strong> element inside the slider to change the colors of the text and header to white when the active slide has this class.</p>
+              <h3>Carousel mode (new in 3.1)</h3>
+              <p>To activate carousel mode, add the .carousel class to the <strong>.slider</strong> and set the visible items by using the following attribute: <strong>"data-visible" = "4"</strong> (which can be any number).</p>
+              <h3>Indicators (new in 3.1)</h3>
+              <p>If you would like to show indicators of the slider or carousel, just add the <strong>"indicators" = "true"</strong> attribute to the <strong>.carousel</strong> element. See an example on the <strong>product.html</strong> page.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../../template/js/assets/bootstrap.js"></script>
+      <script src="../../template/js/assets/imagesloaded.pkgd.min.js"></script>
+      <script src="../../template/js/assets/validation.js"></script>
+      <script src="../../template/js/assets/masonry.pkgd.min.js"></script>
+      <script src="../../template/modules/tera-slider/tera-slider.js"></script>
+      <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+      <script src="../../template/js/assets/animsition.js"></script>
+      <script src="../../template/js/functions.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,493 @@
+/****************
+
+	HUMAN v1.0 documentation
+	By Themanoid
+
+*****************/
+/* 	
+	00 	
+	Presets 	
+*/
+/* line 90, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-backface-visibility: hidden; }
+
+/* 	
+	01	
+	General 	
+*/
+/* line 101, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+html, body, .wrapper {
+  font-size: 16px;
+  position: relative;
+  font-family: "Raleway", Arial, sans-serif; }
+  @media screen and (max-width: 620px) {
+    /* line 101, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    html, body, .wrapper {
+      font-size: 13px; } }
+
+/* 	
+	02	
+	Typography 	
+*/
+/* line 115, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+  font-family: "Lato", Arial, sans-serif; }
+  @media screen and (max-width: 620px) {
+    /* line 115, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    h1 {
+      font-size: 2em; } }
+
+/* line 124, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+h4 {
+  font-size: .7em;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 131, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+p {
+  color: #777;
+  font-size: .9em;
+  font-family: "Lato", Arial, sans-serif; }
+
+/*
+	04
+	Layout
+*/
+/* line 142, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.title-block {
+  padding: 25px 0 30px; }
+  /* line 144, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .title-block p {
+    font-size: 1.2em; }
+
+/* line 149, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.block {
+  padding: 30px;
+  background: #fff; }
+  @media screen and (max-width: 992px) {
+    /* line 149, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .block {
+      margin: 0;
+      padding: 5px 0; } }
+
+@media screen and (max-width: 540px) {
+  /* line 158, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .col-xs-6 {
+    width: 100%; } }
+
+/* line 164, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+section, .top, footer {
+  text-align: center;
+  position: relative; }
+  /* line 167, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  section .row-fluid, .top .row-fluid, footer .row-fluid {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 30px;
+    display: inline-block;
+    text-align: left; }
+    @media screen and (max-width: 620px) {
+      /* line 167, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      section .row-fluid, .top .row-fluid, footer .row-fluid {
+        padding: 15px 0 !important; } }
+
+/* line 180, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.top {
+  line-height: 60px;
+  height: 60px;
+  padding: 0;
+  font-size: .8em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  -webkit-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -ms-text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s; }
+  @media screen and (max-width: 620px) {
+    /* line 180, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .top {
+      padding: 0 15px !important; } }
+  /* line 193, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top .toggle-close {
+    display: none; }
+    @media screen and (max-width: 992px) {
+      /* line 193, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top .toggle-close {
+        display: block; } }
+  /* line 199, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top .menu-toggle {
+    height: 40px;
+    width: 25px;
+    line-height: 3px;
+    display: none;
+    float: right; }
+    @media screen and (max-width: 992px) {
+      /* line 199, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top .menu-toggle {
+        display: block;
+        margin-top: 12px; } }
+    /* line 209, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .top .menu-toggle .bar {
+      height: 2px;
+      width: 25px;
+      margin-top: 7px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      display: inline-block;
+      background: #fff; }
+  /* line 218, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top .row-fluid {
+    padding: 0 45px !important;
+    width: 100%;
+    max-width: 1100px; }
+    @media screen and (max-width: 620px) {
+      /* line 218, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top .row-fluid {
+        padding: 0 20px !important; } }
+  /* line 228, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top .branding {
+    width: 30%;
+    float: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900; }
+    /* line 234, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .top .branding a {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      color: #fff;
+      padding: 1px 0;
+      border-bottom: 1px solid #fff;
+      text-decoration: none; }
+  /* line 243, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    text-align: right; }
+    /* line 249, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .top nav ul li {
+      margin-left: 20px;
+      display: inline-block; }
+      /* line 252, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top nav ul li a {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #fff;
+        font-weight: 600;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.7;
+        -khtml-opacity: 0.7;
+        opacity: 0.7;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        /* line 259, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+        .top nav ul li a:hover {
+          text-decoration: none;
+          color: #fff;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
+          filter: alpha(opacity=100);
+          -moz-opacity: 1;
+          -khtml-opacity: 1;
+          opacity: 1; }
+        /* line 264, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+        .top nav ul li a.active {
+          color: #fff;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
+          filter: alpha(opacity=100);
+          -moz-opacity: 1;
+          -khtml-opacity: 1;
+          opacity: 1; }
+      /* line 269, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top nav ul li.close {
+        display: none; }
+    @media screen and (max-width: 992px) {
+      /* line 243, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top nav ul {
+        display: none;
+        background: #111;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        line-height: 45px; }
+        /* line 281, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+        .top nav ul li {
+          width: 100%;
+          margin-left: 0;
+          text-align: center; }
+          /* line 285, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+          .top nav ul li a {
+            color: #fff !important; } }
+  @media screen and (max-width: 992px) {
+    /* line 291, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .top nav.toggled {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
+      /* line 296, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top nav.toggled ul {
+        display: block; }
+        /* line 298, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+        .top nav.toggled ul .close {
+          display: inline-block; } }
+  /* line 305, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top.affix-top {
+    top: 0 !important; }
+  /* line 308, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top.affix, .top.affix-bottom, .top.affix.light, .top.affix-bottom.light {
+    background: #333;
+    top: 0 !important; }
+    /* line 311, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .top.affix a, .top.affix-bottom a, .top.affix.light a, .top.affix-bottom.light a {
+      color: #999; }
+      /* line 313, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .top.affix a.active, .top.affix-bottom a.active, .top.affix.light a.active, .top.affix-bottom.light a.active {
+        color: #fff; }
+    /* line 317, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .top.affix .branding a, .top.affix-bottom .branding a, .top.affix.light .branding a, .top.affix-bottom.light .branding a {
+      color: #fff;
+      border-color: #fff; }
+  /* line 324, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top.light .menu-toggle .bar {
+    background: #111; }
+  /* line 329, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top.light .branding a {
+    color: #111;
+    border-color: #111;
+    -webkit-text-shadow: 0 0 0;
+    -moz-text-shadow: 0 0 0;
+    -ms-text-shadow: 0 0 0;
+    text-shadow: 0 0 0; }
+  /* line 338, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .top.light nav ul li a {
+    color: #111;
+    -webkit-text-shadow: 0 0 0;
+    -moz-text-shadow: 0 0 0;
+    -ms-text-shadow: 0 0 0;
+    text-shadow: 0 0 0; }
+
+/*
+	07
+	Elements
+*/
+/* line 353, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+img.fs, img.bg {
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  min-width: 992px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: -1; }
+  @media screen and (max-width: 992px) {
+    /* line 353, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    img.fs, img.bg {
+      left: 50%;
+      margin-left: -496px; } }
+
+/* line 367, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+blockquote {
+  margin: 40px 0;
+  border-color: #333; }
+
+/* line 372, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+img {
+  max-width: 100%; }
+
+/* line 376, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.btn {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: .8em;
+  letter-spacing: 2px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px 0; }
+  /* line 386, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .btn span {
+    margin-right: 10px; }
+  /* line 390, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .btn:hover {
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+    background: #f1f1f1; }
+
+/* line 396, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.form-control {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  border-color: #777;
+  background: transparent;
+  color: #ccc; }
+
+/* line 403, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.info-block {
+  background: #333;
+  color: #fff; }
+  /* line 406, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .info-block h1, .info-block h2, .info-block h3, .info-block h4, .info-block h5, .info-block h6, .info-block p {
+    margin: 15px 0; }
+  /* line 409, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .info-block .btn {
+    color: #fff;
+    border-color: #555;
+    background: #222; }
+    /* line 413, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .info-block .btn:hover {
+      background: transparent;
+      color: #ccc;
+      border-color: #ccc; }
+
+/* line 421, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+#maps {
+  height: 300px; }
+
+/* line 425, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.progress {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+  /* line 427, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .progress .progress-bar {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s; }
+
+/* line 432, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.skills {
+  margin-top: 30px; }
+
+/* line 436, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.grey {
+  background: #f1f1f1; }
+
+/* line 440, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.member {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  /* line 448, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .member:hover {
+    -webkit-box-shadow: 0 0 50px #cccccc;
+    -moz-box-shadow: 0 0 50px #cccccc;
+    -ms-box-shadow: 0 0 50px #cccccc;
+    box-shadow: 0 0 50px #cccccc; }
+    /* line 451, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .member:hover .img .social {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
+      filter: alpha(opacity=100);
+      -moz-opacity: 1;
+      -khtml-opacity: 1;
+      opacity: 1; }
+  /* line 456, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .member .img {
+    position: relative; }
+    /* line 458, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .member .img img {
+      position: relative;
+      max-width: 100%; }
+    /* line 462, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+    .member .img .social {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$ms)";
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      -khtml-opacity: 0;
+      opacity: 0;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      position: absolute;
+      z-index: 2;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8); }
+      /* line 469, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+      .member .img .social .icons {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin-top: -25px;
+        text-align: center; }
+        /* line 474, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+        .member .img .social .icons .icon {
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+          color: #666;
+          text-decoration: none;
+          margin: auto 10px;
+          font-size: 21px;
+          width: 20px;
+          display: inline-block; }
+          /* line 482, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+          .member .img .social .icons .icon:hover {
+            color: #fff; }
+  /* line 489, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .member .info {
+    padding: 5px 25px 10px; }
+
+/* line 494, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+.icon {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 42px;
+  color: #333;
+  text-align: center; }
+  /* line 500, /Users/kaj/Dropbox/Freelance/Themanoid/Themes/Human/docs/dev-mac/source/stylesheets/style.scss */
+  .icon:hover {
+    text-decoration: none; }

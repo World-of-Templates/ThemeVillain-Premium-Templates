@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Titan - Responsive Creative Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png">
+    <script src="../../template/js/assets/jquery.js"></script>
+  </head>
+  <body class="dark-hero">
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="../index.html" class="brand"><img src="../../template/images/logo-titan.svg" alt="" class="brand-default"><img src="../../template/images/logo-titan-white.svg" alt="" class="brand-light"></a>
+          <!-- Menu-->
+          <div class="nav-container classic pull-right">
+            <ul class="navigation-items">
+              <li><a href="../pages/get-started.html">Quick start</a></li>
+              <li><a href="../pages/template-structure.html">Template Structure</a></li>
+              <li> <a href="../pages/cheatsheet.html">Cheatsheet</a></li>
+              <li class="dropdown"> <a href="#">Components </a>
+                <ul class="dropdown-nav">
+                  <li><a href="../pages/titan-slider.html">Titan Slider</a></li>
+                  <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+                  <li><a href="../pages/portfolio.html">The portfolio</a></li>
+                  <li><a href="../pages/hero.html">The hero</a></li>
+                  <li><a href="../pages/contact-form.html">PHP Contactform</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="hero small dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Hero section</h1>
+              <p>This page will explain the hero section.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="medium content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">   
+              <h3>HTML Structure</h3>
+              <p>For any hero grid you add, the HTML will look something like this:</p>
+              <pre>&lt;section class="hero"&gt;
+  // The background
+  &lt;div class="bg" style="background-image: url(path/to/image);"&gt;&lt;/div&gt;
+  // The bottom aligned container, using vbottom
+  &lt;div class="vbottom"&gt;
+    // The container that has specific dimensions
+    &lt;div class="container"&gt;
+      &lt;div class="row"&gt;
+        // The content of your hero, in this case within a col-md-6 (half sized) holder
+        &lt;div class="col-md-6"&gt; 
+          &lt;h1&gt; The title &lt;/h1&gt;
+          &lt;p&gt; The description &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;  
+&lt;/section&gt;      </pre>
+              <h3>Dark hero</h3>
+              <p>To make use of a dark hero with light text, simply add a class named ".dark" to the ".hero" class. Becoming &lt;section class="hero dark"&gt;</p>
+              <h3>Faded background</h3>
+              <p>When you have a background image that will make the text hard to read, it's often good to add the ".faded" class to the background, like this: <br><strong>&lt;div class="bg faded" style="background-image: url(path/to/image);"&gt;&lt;/div&gt;</strong> <br>This will fade your background and the text will be more readable. </p>
+              <h3>Centered text</h3>
+              <p>You can use the ".text-center" class from Bootstrap to have the text centered inside the hero. This class can be added to the .container.</p>
+              <h3>Fullscreen hero</h3>
+              <p>The hero is fullscreen by default. If you'd like to have a smaller hero, then use ".medium", ".small", ".smaller" or "tiny" as an addition on the hero class.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../../template/js/assets/bootstrap.js"></script>
+      <script src="../../template/js/assets/imagesloaded.pkgd.min.js"></script>
+      <script src="../../template/js/assets/validation.js"></script>
+      <script src="../../template/js/assets/packery.pkgd.min.js"></script>
+      <script src="../../template/js/assets/velocity.min.js"></script>
+      <script src="../../template/modules/titan-slider/titan-slider.js"></script>
+      <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+      <script src="../../template/js/assets/animsition.js"></script>
+      <script src="../../template/js/functions.js"></script>
+    </div>
+  </body>
+</html>

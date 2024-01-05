@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Eight - Creative Template for professionals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <!-- inject:css-->
+    <!-- endinject -->
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=1">
+    <script src="../../template/js/assets/jquery.js"></script>
+  </head>
+  <body class="smooth-transition">
+    <div class="container-fluid"> 
+      <header>
+        <div class="container">
+          <div class="col-md-2"><a href="../index.html" class="brand"><img alt="Your Alternative text" src="../../template/images/logo.svg"></a></div>
+          <div class="col-md-8 text-center">
+            <div class="nav-trigger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="navigation">
+              <li><a href="../index.html">Index</a></li>
+              <li><a href="../pages/get-started.html">Get started</a></li>
+              <li><a href="../pages/template-structure.html">Template Structure</a></li>
+              <li><a href="../pages/portfolio.html">Portfolio</a></li>
+              <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+              <li><a href="../pages/cheat-sheet.html">Cheatsheet</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 pt-xs">
+            <h5 class="hide-tablet mt-sm pull-right">Documentation</h5>
+          </div>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Portfolio</h1>
+              <p>A look inside.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <h3>Classic version</h3>
+              <h5>Markup</h5>
+              <pre class="mt-md">// The item container
+&lt;div class="col-md-12 grid classic"&gt; // The class "classic" defines the classic version
+  // The item
+  &lt;a class="item books" href="path/to/work-page.html"&gt; // Use the "books" class for filtering
+    &lt;div class="thumb"&gt; // Thumbnail holder
+      &lt;img src="path/to/thumbnail-image.jpg"/&gt; // Thumbnail container
+    &lt;div class="caption"&gt;
+      &lt;h4&gt;Caption title&lt;/h4&gt; // Caption title
+      &lt;div class="tag"&gt;Tag &amp; Tag&lt;/div&gt; // Tags or description
+    &lt;/div&gt;
+  &lt;/a&gt;
+  // Another item
+  &lt;a class="item graphics" href="path/to/work-page.html"&gt;
+    ...</pre>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <h3>Masonry version</h3>
+              <h5>Markup</h5>
+              <pre class="mt-md">// The item container
+&lt;div class="col-md-12 grid masonry"&gt; // The class "masonry" defines the Masonry version
+  // The item
+  &lt;a class="item books" href="path/to/work-page.html"&gt; // Use the "books" class for filtering
+    &lt;div class="thumb"&gt; // Thumbnail holder
+      &lt;img src="path/to/thumbnail-image.jpg"/&gt; // Thumbnail container
+    &lt;div class="caption"&gt;
+      &lt;h4&gt;Caption title&lt;/h4&gt; // Caption title
+      &lt;div class="tag"&gt;Tag &amp; Tag&lt;/div&gt; // Tags or description
+    &lt;/div&gt;
+  &lt;/a&gt;
+  // Another item
+  &lt;a class="item graphics" href="path/to/work-page.html"&gt;
+    ...</pre>
+            </div>
+          </div>
+        </div>
+        <section class="content mt-xl mb-xl">
+          <div class="container">
+            <div class="row vcenter">
+              <div class="col-md-5">
+                <h3>Filter options</h3>
+                <h5>How it works</h5>
+                <p>It's easy as adding a link inside the filter container, using a "data-filter" attribute that corresponds with the class that needs to be filtered. You can then use this class on every ".item"</p>
+              </div>
+              <div class="col-md-5 col-md-offset-1">
+                <h5>Markup</h5>
+                <pre class="mt-md">// The Filter container
+&lt;div class="filter-container"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="inner"&gt;
+      &lt;ul class="filters"&gt; // The filter list
+        &lt;li&gt;
+          // You can select all items by simply filtering on ".item"
+          &lt;a class='filter' href='#' data-filter='item'&gt;All&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+          // This filter corresponds with items that have a ".design" class
+          &lt;a class='filter' href='#' data-filter='design'&gt;Design&lt;/a&gt;
+        &lt;/li&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content mt-xl mb-xl">
+          <div class="container"><span class="mr-lg">Next up</span><a href="tera-lightbox.html" class="btn btn-default">Tera Lightbox</a></div>
+        </section>
+      </section>
+    </div>
+    <script src="../../template/js/assets/bootstrap.js"></script>
+    <script src="../../template/js/assets/imagesloaded.pkgd.min.js"></script>
+    <script src="../../template/js/assets/validation.js"></script>
+    <script src="../../template/js/assets/packery.pkgd.min.js"></script>
+    <script src="../../template/js/assets/velocity.min.js"></script>
+    <script src="../../template/js/assets/typed.min.js"></script>
+    <script src="../../template/modules/titan-slider/titan-slider.js"></script>
+    <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+    <script src="../../template/js/assets/animsition.js"></script>
+    <script src="../../template/js/functions.js"></script>
+  </body>
+</html>

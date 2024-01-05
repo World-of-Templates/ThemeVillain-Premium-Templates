@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bone - Creative Agency Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?v=2">
+    <script src="../../template/js/assets/jquery.js"></script>
+  </head>
+  <body>
+    <!-- Wrapper-->
+    <div id="wrapper" class="container-fluid">
+      <!-- Header-->
+      <header>
+        <div class="container">
+          <!-- Branding--><a href="../../template/index.html" class="brand"><img src="../../template/images/logo-black.svg" class="dark-brand"><img src="../../template/images/logo-white.svg" class="light-brand"></a>
+          <!-- Menu-->
+          <ul class="navbar-classic">
+            <li><a href="../pages/get-started.html">Quick start</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li> <a href="../pages/cheatsheet.html">Cheatsheet</a></li>
+            <li><a>Components <span class="caret"></span></a>
+              <ul class="dropdown">
+                <li><a href="../pages/tera-slider.html">Tera Slider</a></li>
+                <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+                <li><a href="../pages/portfolio.html">The portfolio</a></li>
+                <li><a href="../pages/hero.html">The hero</a></li>
+                <li><a href="../pages/contact-form.html">PHP Contactform</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <section class="hero content gray vbottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Tera Lightbox</h1>
+              <p>This page will explain the Tera Lightbox</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="medium">
+        <div class="container content">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="title-block">
+                <h3>Adding a lightbox item</h3>
+              </div>
+              <p>To add a lightbox item, make sure you have a link with a working image or video url inside the "href" attribute and the .lightbox class added. Like this:</p>
+              <pre>&lt;a href="image/path/image.jpg" class="lightbox"&gt;
+   // Your thumbnail image
+&lt;/a&gt;     </pre>
+              <h3>Lightbox gallery</h3>
+              <p>For any existing lightbox image on a page, the Lightbox script will automatically generate a lightbox gallery which is infinite.</p>
+              <h3>Videos</h3>
+              <p>You can also add MP4, YouTube and Vimeo embed links.</p>
+              <p><strong>Note</strong>: this is not the url of the YouTube video page or Vimeo video page, but looks like this:</p>
+              <h5>YouTube</h5>
+              <p>For YouTube us the video ID from the video URL, like this: <strong>https://www.youtube.com/embed/&lt;VIDEO_ID&gt;</strong></p>
+              <h5>Vimeo</h5>
+              <p>For Vimeo us the video ID from the video URL, like this: <strong>//player.vimeo.com/video/&lt;VIDEO_ID&gt;</strong></p>
+              <p>You can see examples of the embed links inside the index.html. No need to add additional classes (other than .lightbox). The lightbox script will automatically see if it's a Vimeo or YouTube link and will act like one.</p>
+              <h5>Mp4</h5>
+              <p>For <strong>Mp4 videos</strong>, just link to the mp4 video inside the href and it will automatically recognize that it's an mp4.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="../../template/js/assets/bootstrap.js"></script>
+      <script src="../../template/js/assets/imagesloaded.pkgd.min.js"></script>
+      <script src="../../template/js/assets/validation.js"></script>
+      <script src="../../template/js/assets/masonry.pkgd.min.js"></script>
+      <script src="../../template/modules/tera-slider/tera-slider.js"></script>
+      <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+      <script src="../../template/js/assets/animsition.js"></script>
+      <script src="../../template/js/functions.js"></script>
+    </div>
+  </body>
+</html>

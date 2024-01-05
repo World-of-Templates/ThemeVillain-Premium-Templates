@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Be | Documentation</title>
+    <meta charset='utf-8'>
+    <meta content='Description' name=''>
+    <meta content='1 day' name='revisit-after'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="shortcut icon" href="favicon.ico?v=5" type="image/x-icon">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <!-- Styles -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='top-nav'>
+    <div class='container-fluid loaded'>
+      <header data-spy='affix'>
+        <div class='menu-trigger'>
+          <div class='bar'></div>
+          <div class='bar'></div>
+          <div class='bar'></div>
+        </div>
+        <a class='brand transition' href='index.html' style='background-image:url(images/logo.svg);'></a>
+        <nav id='main'>
+          <div class='nav'>
+            <ul>
+              <li>
+                <a class='anchor' href='#intro'>Introduction</a>
+              </li>
+              <li>
+                <a class='anchor' href='#slider'>Tera Slider</a>
+              </li>
+              <li>
+                <a class='anchor' href='#the-lightbox'>Lightbox</a>
+              </li>
+              <li>
+                <a class='anchor' href='#portfolio'>Portfolio</a>
+              </li>
+              <li>
+                <a class='anchor' href='#php-form'>Contact Form</a>
+              </li>
+              <li>
+                <a class='anchor' href='#classes'>Helpful classes</a>
+              </li>
+              <li>
+                <a class='anchor' href='#logo'>Light &amp; dark logo</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-3'>
+              <div class='text-center'>
+                <div class='title-block'>
+                  <h1>Documentation</h1>
+                </div>
+                <p>Thank you for purchasing Be! I hope you will have a great time enjoying the template and adjusting it.</p>
+                <p>This documenation will give you some directions and can be used to troubleshoot. If there's some bug you can't solve, don't hesitate to contact Themanoid support through the contactform on Themeforest (that way I can see if you actually bought the item).</p>
+                <p><strong>Happy coding!!!</strong></p>
+                <p>- Themanoid</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line' id='intro'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-3'>
+              <div class='title-block'>
+                <h2 class='text-center'>Introduction</h2>
+              </div>
+              <h3>Pro tip</h3>
+              <p><strong>I would advice not to start from scratch! Always use an existing page to adjust.</strong></p>
+              <h3>Bootstrap 3.3.2</h3>
+              <p>The Be template is based on Bootstrap 3.3.2. That means you can use anything from the Bootstrap Component library and that most of the items and classes are Bootstrap. For example, the buttons are based on Bootstrap, but it's styled according to the Be template look-and-feel. You can use these buttons anywhere in the template.</p>
+              <p><strong>For any Bootstrap related questions, please refer to it's <a href="http://getbootstrap.com/components/">website</a>.</strong></p>
+              <h3>FontAwesome</h3>
+              <p>With <strong>over 500 icons</strong>, FontAwesome is the library that's most complete and most suitable. You can use any of it's icons in the Be template. See the <a href="http://fontawesome.io/">FontAwesome</a> website for more information and available icons/classes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line' id='slider'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-8 col-md-offset-2'>
+              <div class='title-block'>
+                <h2 class='text-center'>Tera slider</h2>
+              </div>
+              <h3>HTML Structure</h3>
+              <p>The Tera slider is lightweight and has an easy-to-use HTML structure, as follows:</p>
+              <pre>&lt;div class="slider"&gt;&#x000A;   &lt;ul class="slides"&gt;&#x000A;      &lt;li class="slide"&gt;&#x000A;         // Content slide 1&#x000A;      &lt;/li&gt;&#x000A;      &lt;li class="slide"&gt;&#x000A;         // Content slide 2&#x000A;      &lt;/li&gt;&#x000A;   &lt;/ul&gt;&#x000A;&lt;/div&gt;</pre>
+              <p>Knowing this, you can add as many slides as you want.</p>
+              <h3>Slide background</h3>
+              <p>The slide background is actually a div object that owns a style property with the corresponding background image url. Just like this:</p>
+              <pre>// Inside .slide > section.jumbotron&#x000A;&lt;div class="bg" style="background-image:url(url-to-image)"&gt;&lt;/div&gt;</pre>
+              <h3>Dark mode for dark backgrounds</h3>
+              <p>For light on dark slides, Be has a special class you can add. Add the <strong>".dark"</strong> class to the <strong>&lt;li class="slide"&gt;</strong> element inside the slider to change the colors of the text and header to white when the active slide has this class.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line' id='the-lightbox'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-8 col-md-offset-2'>
+              <div class='title-block'>
+                <h2 class='text-center'>Lightbox</h2>
+              </div>
+              <h3>Adding a lightbox item</h3>
+              <p>To add a lightbox item, make sure you have a link with a working image url inside the "href" attribute and the .lightbox class added. Like this:</p>
+              <pre>&lt;a href="image/path/image.jpg" class="lightbox"&gt;&#x000A;   // Your thumbnail image&#x000A;&lt;/a&gt;</pre>
+              <h3>Lightbox gallery</h3>
+              <p>For any existing lightbox image on a page, the Lightbox script will automatically generate a lightbox gallery which is infinite.</p>
+              <h3>YouTube and Vimeo</h3>
+              <p>You can also add YouTube and Vimeo embed links.</p>
+              <p><strong>Note</strong>: this is not the url of the YouTube video page or Vimeo video page, but looks like this:</p>
+              <p>YouTube: <strong>https://www.youtube.com/embed/&lt;VIDEO_ID&gt;</strong></p>
+              <p>Vimeo: <strong>//player.vimeo.com/video/&lt;VIDEO_ID&gt;</strong></p>
+              <p>You can see examples of the embed links inside the index.html. No need to additional classes (other than .lightbox). The lightbox script will automatically see if it's a Vimeo or YouTube link and will act like one.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line' id='portfolio'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-10 col-md-offset-1'>
+              <div class='title-block'>
+                <h2 class='text-center'>Portfolio &amp; Grid</h2>
+              </div>
+              <h3>The HTML</h3>
+              <p>For any portfolio grid you add, the HTML will look something like this:</p>
+              <pre>&lt;section id="grid" class-"no-spacing col-3"&gt;&#x000A;    // The item&#x000A;    &lt;a class="item" style="background-image: url(image/url);" href="lightbox/image"&gt;&#x000A;        // The caption&#x000A;        &lt;div class="caption"&gt;&#x000A;            &lt;h5 class="extra"&gt; YouTube &lt;/h5&gt;    &#x000A;            &lt;div class="titles"&gt;&#x000A;                &lt;h3 class="title"&gt; YouTube example &lt;/h3&gt;    &#x000A;                &lt;h4 class="subtitle"&gt; This is an example subtitle &lt;/h4&gt;    &#x000A;            &lt;/div&gt;    &#x000A;        &lt;/div&gt; &#x000A;    &lt;/a&gt;    &#x000A;    // A second item&#x000A;    &lt;a class="item" ...&#x000A; &lt;/section&gt;</pre>
+              <p>As you can see it's a background image that's showing the thumbnail image. This way, you can use any size and any proportion of the image in your portfolio. No need to resize! Plus, it's retina ready when you add a higher resolution image.</p>
+              <h3>Item proportions</h3>
+              <p>You can easily change an item's proportion by changing it's class. For example:</p>
+              <pre>&lt;section id="grid"&gt; &#x000A;    // Item&#x000A;    &lt;div class="item wide"&gt; &#x000A;       // Content</pre>
+              <p>As you can see it's now using a <strong>".wide"</strong> class, which gives the item twice the width. You could also set the class to <strong>".high"</strong>, which gives it twice the height!</p>
+              <h3>Columns</h3>
+              <p>You can choose between 2 columns, which is the default grid, or 3 columns by adding the <strong>".col-3"</strong> class to the grid. Please visit the 3 column portfolio page to see how it's done.</p>
+              <h3>No spacing</h3>
+              <p>If you want to delete the spacing among the items, simply add the <strong>.no-spacing"</strong> class to the <strong>#grid</strong> portfolio container.</p>
+              <h3>Fullscreen mode</h3>
+              <p>This is the same as the no-spacing portfolio, but you'll need to add an additional ".no-spacing" class to the section that wraps the grid. Please also see the corresponding html page to see the example.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line' id='php-form'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-8 col-md-offset-2'>
+              <div class='title-block'>
+                <h2 class='text-center'>PHP Contact form</h2>
+              </div>
+              <h3>The use</h3>
+              <p>To use the form, please always use it as it is from the original code. With knowledge of jQuery you can adjust the script if you'd like, but it's currently built for the items shown.</p>
+              <h3>Changing the e-mail address</h3>
+              <p>Look for the php folder. Inside there's the email.php file which you need to edit.</p>
+              <p>In there, look for the following line:</p>
+              <pre>to         = 'e-mail@example.com'; //Your e-mail address</pre>
+              <p>Obviously, you can change the 'e-mail@example.com' into your own e-mail address.</p>
+              <h3>PHP</h3>
+              <p>Note that this contact form will only work when it's used on a server with PHP enabled.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line' id='classes'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-10 col-md-offset-1'>
+              <div class='title-block'>
+                <h2 class='text-center'>Helpful classes</h2>
+              </div>
+              <h3>In this section I will explain some helpful classes</h3>
+              <p><strong>.content</strong> - use this for content sections. It sets the correct image sizes, blockquote margins, etc.</p>
+              <p><strong>.subtitle</strong> - gives the title less opacity</p>
+              <p><strong>.bottom-line</strong> - adds a seperator below</p>
+              <p><strong>.top-line</strong> - adds a seperator above</p>
+              <p><strong>.top-nav</strong> - a body class that defines the (top) position of the main menu</p>
+              <p><strong>.bottom-nav</strong> - a body class that defines the (bottom) position of the main menu</p>
+              <p><strong>.btn</strong> - defines a button element</p>
+              <p><strong>.blog</strong> - a #grid class that defines a blog grid (see blog section)</p>
+              <p><strong>.col-3</strong> - a #grid class that defines the number of 3 columns</p>
+              <p><strong>.no-spacing</strong> - a #grid class that removes the spacing from the grid elements.</p>
+              <p><strong>.title-block</strong> - use this to wrap a title that needs more spacing</p>
+              <p><strong>.vcenter</strong> - centers the element vertically, relative to the parent element (dependance: functions.js)</p>
+              <p><strong>.jumbotron</strong> - use this class to define a jumbotron or hero section</p>
+              <p><strong>.dark</strong> - jumbotron class; gives the content a white color.</p>
+              <p><strong>.bg</strong> - will use the parents' height and width and will cover the background image that needs to be defined in this section (inline or via css).</p>
+              <p><strong>.faded</strong> - adds 50% transparency to the .bg element. Use this together with the .bg class.</p>
+              <p><strong>.mobile-center</strong> - centers the text at mobile widths and adds a bottom margin.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line' id='logo'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-8 col-md-offset-2'>
+              <div class='title-block'>
+                <h2 class='text-center'>Light &amp; dark logo</h2>
+              </div>
+              <h3>Changing the logo</h3>
+              <p>Be has a way of handling a logo inside the <strong>.brand</strong> element when it comes to visibility for dark and light backgrounds. It basically changes the position of the image in CSS to serve the right logo at the right time.</p>
+              <p>Feel free to open up the original Be logo and see how it's made. As you can see, it has a dark and light version inside one image file. You can create your own logo using your favorite creation tool and replace the light and dark versions inside this file, or create your own logo file.</p>
+              <h3>Things you should know when creating</h3>
+              <p>When you create a logo, be sure that you have divided your (Illustrator or Photoshop) document in 2 equal sections, below eachother. The logo should be centered in each section (vertical and horizontal), with the light version on top and the dark version in the bottom section.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='top-line'>
+        <div class='content'>
+          <div class='row'>
+            <div class='col-md-6 col-md-offset-3 text-center'>
+              <div class='title-block'>
+                <h3>Thank you!</h3>
+              </div>
+              <p>I would like to thank you once more for purchasing Be. Have a nice day and happy coding!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class='gray text-center'>
+        <div class='row'>
+          <div class='col-md-12'>
+            <div class='copy'>Of course you can change the copyright text :-)</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="javascripts/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.mobile.custom.min.js" type="text/javascript"></script>
+    <script src="javascripts/functions.js" type="text/javascript"></script>
+  </body>
+</html>

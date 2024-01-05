@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Documentation - The Agency</title>
+    <meta charset='utf-8'>
+    <meta content='Description' name='description'>
+    <meta content='1 day' name='revisit-after'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <link href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic' rel='stylesheet'>
+    <link href='stylesheets/style.css' media='screen' rel='stylesheet'>
+    <!--[if lt IE 9]>
+    <script src="javascripts/html5shiv.js" type="text/javascript"></script>
+    <script src="javascripts/respond.min.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <section class='dark trans text-center'>
+      <div class='centered medium'>
+        <h1>
+          Documentation
+        </h1>
+        <p>
+          To get started with the Agency HTML5 Template
+        </p>
+        <a class='icon' href='#start'>
+          <span>
+            Get started
+          </span>
+        </a>
+      </div>
+    </section>
+    <nav class='dark' data-spy='affix' id='main'>
+      <div class='logo'>
+        <span class='glyphicon glyphicon-flash'></span>
+        The Agency
+      </div>
+      <a class='icon toggle-menu pull-right' href='#'>
+        <span class='fa fa-bars'></span>
+      </a>
+      <ul><li>
+          <a class='start active' href='#start'>
+            Start
+          </a>
+        </li><li>
+          <a class='menu' href='#menu'>
+            Menu
+          </a>
+        </li><li>
+          <a class='lightbox' href='#lightbox'>
+            Lightbox
+          </a>
+        </li><li>
+          <a class='blog' href='#blog'>
+            Blog
+          </a>
+        </li><li>
+          <a class='contact' href='#contact'>
+            Contact
+          </a>
+        </li></ul>
+    </nav>
+    <section class='text-center dark' id='start'>
+      <div class='centered medium'>
+        <h2>
+          Getting started
+        </h2>
+        <p>
+          Thank you so much for purchasing The Agency!
+          We hope you will enjoy it.
+          The Agency uses the Bootstrap 3.1.1 framework, which means you can use it's extended library of components, aswell as the column structure.
+          To get started, please navigate using the buttons above.
+        </p>
+      </div>
+    </section>
+    <section class='white small' id='menu'>
+      <div class='row'>
+        <div class='col-md-6 col-md-offset-3'>
+          <h2>
+            The Menu
+          </h2>
+          <p>
+            To make the navigation work, you will at least need the following code for the menu:
+          </p>
+          <h4>
+            Smooth anchor links
+          </h4>
+          <pre>&lt;nav id="main" data-spy="affix"&gt;&#x000A;	&lt;ul&gt;&#x000A;		&lt;li&gt;&#x000A;			&lt;a href="#sectionID" class="sectionID&gt;Title&lt;/a&gt;&#x000A;		&lt;/li&gt;&#x000A;	&lt;/ul&gt;	&#x000A;&lt;/nav&gt;</pre>
+          <p>
+            And a section with the corresponding ID:
+          </p>
+          <pre>&lt;section id="sectionID"&gt;&#x000A;// Your content here&#x000A;&lt;/section&gt;</pre>
+          <p>
+            As you might have noticed, we use the same ID three times. Make sure this same ID is used for the link's <code>href</code> and <code>class</code>. Also, to trigger the smooth scroll function, use this ID again as the section's ID.
+          </p>
+          <p>
+            Make sure you only use this ID for one section.
+          </p>
+          <p>
+            To set the active menu item after the page is loaded, simply add the <code>.active</code> class to the main menu's link.
+          </p>
+          <h4>
+            Normal links
+          </h4>
+          <p>
+            To create normal links, you won't need the section ID's. Just put the desired url into the <code>href</code> attribute of the <code>a</code> inside the <code>nav#main</code> element.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class='white' id='lightbox'>
+      <div class='row'>
+        <div class='col-md-6 col-md-offset-3 small'>
+          <h2>
+            How to use the lightbox
+          </h2>
+          <p>
+            It's quite simple! First, make sure you are inside <code>section.portfolio</code>, then put an <code>.item</code> inside it, like:
+            <br>
+          </p>
+          <pre>&lt;a href="path/to/lightbox/image.jpg" class="item"&gt;</pre>
+          <p>
+            Inside the <code>.item</code> link, you can put the thumbnail, which will be clickable and will show the lightbox with the image from the specified url.
+          </p>
+          <h3>
+            How to add video's to the lightbox
+          </h3>
+          <p>
+            For video's to show inside the lightbox, you will need the ID of either a YouTube or Vimeo video link.
+          </p>
+          <h4>
+            Retrieving ID's
+          </h4>
+          <p>
+            For YouTube links, you can find the ID inside the URL right after <code>www.youtube.com/watch?v=</code>
+          </p>
+          <p>
+            In case you want to show a Vimeo video, use the id located after: <code>http://vimeo.com/</code> (which is usually a large number).
+          </p>
+          <h4>
+            Implementing
+          </h4>
+          <p>
+            Now, find the <code>&lt;a class='item'&gt;</code> element. And add the following attributes:
+          </p>
+          <p class='small'>
+            <code>data-height="[height]"</code>, <code>data-width="[width]"</code>, <code>data-type="[vimeo OR youtube]"</code> and
+            <code>data-video="[videoID]"</code>.
+          </p>
+          <p>
+            Use the previously located video id for the last attribute. Your video item can look like:
+          </p>
+          <p class='small'>
+            <code>&lt;a class='item' data-height='700' data-type='vimeo' data-video='21604065' data-width='1000' href='#'&gt;</code>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class='white' id='blog'>
+      <div class='row'>
+        <div class='col-md-6 col-md-offset-3'>
+          <h2>
+            The Blog
+          </h2>
+          <p>
+            Since the blog is static (without the back-end part), we will help you out with the front-end part.
+          </p>
+          <h4>
+            The posts
+          </h4>
+          <p>
+            The posts are generated from the <code>ul.posts</code> list. Each <code>li.post</code> represents a post.
+          </p>
+          <h4>
+            Posts content
+          </h4>
+          <p>
+            You can write posts content inside each <code>li.post</code>. The title of the post comes from the <code>h3</code> element inside it, and the content goes into the <code>div.content</code> element. From that, a post is born!
+          </p>
+          <p>
+            Please also see the original code (pages/blog.html) for examples and practices!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class='white' id='contact'>
+      <div class='row'>
+        <div class='col-md-6 col-md-offset-3'>
+          <h2>
+            PHP contact form
+          </h2>
+          <p>
+            First of all; make sure you run your website on a PHP-enabled server. When all the template files are uploaded to the webserver, the PHP contactform works out-of-the-box. The only thing you will need to change is the receivers' e-mail address.
+            <br>To do that, find the following line inside the <strong>email.php</strong> file from the <strong>php</strong> directory of your template folder:
+          </p>
+          <pre>$to         = 'email@example.com'; //Your e-mail address</pre>
+          <p>
+            Found it? Great! Now the only thing you need to do is change the address <strong>between</strong> the single quotes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <!-- Bootstrap JS -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- Modernizr -->
+    <script src="javascripts/modernizr.js" type="text/javascript"></script>
+    <!-- Waypoints -->
+    <script src="javascripts/waypoints.min.js" type="text/javascript"></script>
+    <!-- Perfect Scrollbar -->
+    <script src="javascripts/ps.js" type="text/javascript"></script>
+    <!-- Contactform -->
+    <script src="javascripts/validation.js" type="text/javascript"></script>
+    <!-- Functions -->
+    <script src="javascripts/functions.js" type="text/javascript"></script>
+  </body>
+</html>

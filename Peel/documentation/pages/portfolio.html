@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Peel - Responsive HTML5 Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=v1.0">
+  </head>
+  <body>
+    <div id="wrapper" class="animsition">
+      <div id="loader" class="fh">
+        <section class="vcenter">
+          <div class="container">
+            <div class="indicator"> <span class="number">00</span><span class="unit">%</span>
+              <div class="loadbar">
+                <div class="inner"></div>
+              </div>
+            </div>
+            <div class="img-count"><span class="loaded"></span><span class="description">images loaded</span></div>
+          </div>
+        </section>
+      </div>
+      <header id="main-header">
+        <div class="container">
+          <div class="grid">
+            <nav class="main-nav">
+              <div class="responsive-nav">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <ul class="nav-links">
+                <li class="col-1 brand"><a href="../index.html"><img alt="Peel" src="../../template/images/logo.svg" class="default"></a></li>
+                <li class="col-1 col-offset-1"><a href="../pages/get-started.html" class="nav-link undefined">Get started</a>
+                  <ul class="dropdown">
+                    <li><a href="../index.html" class="nav-link undefined">Home</a>
+                    </li>
+                    <li><a href="../pages/get-started.html" class="nav-link undefined">Get started</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-1 col-offset-1"><a href="../pages/template-structure.html" class="active nav-link undefined">Structure</a>
+                  <ul class="dropdown">
+                    <li><a href="../pages/template-structure.html" class="nav-link undefined">Template structure</a>
+                    </li>
+                    <li><a href="../pages/grid-structure.html" class="nav-link undefined">Grid</a>
+                    </li>
+                    <li><a href="../pages/portfolio-structure.html" class="nav-link undefined">Portfolio</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-1 col-offset-1"><a href="#" class="nav-link undefined">Modules</a>
+                  <ul class="dropdown">
+                    <li><a href="../pages/tera-lightbox.html" class="nav-link undefined">Tera Lightbox</a>
+                    </li>
+                    <li><a href="../pages/titan-slider.html" class="nav-link undefined">Titan Slider</a>
+                    </li>
+                    <li><a href="../pages/contact-form.html" class="nav-link undefined">Contact form</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="inner">
+        <section class="intro fadein">
+          <div class="container mb-xl">
+            <div class="row">
+              <div class="col-md-10">
+                <h1>Portfolio</h1>
+                <p>A look inside.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <h2>The grid portfolio</h2>
+                <p>The grid container is a div element that always holds the '.grid-portfolio' class. <br>Within, there's a '.grid-images' element.</p>
+              </div>
+              <div class="col-md-6 col-md-offset-1">
+                <pre class="mt-md">// The grid container
+&lt;section class="grid-portfolio fadein"&gt;
+	&lt;div class="grid-images"&gt;
+	&lt;div class="item-sizer"&gt;&lt;/div&gt;
+		// The item
+		&lt;a class="item wide" href="path/to/work-page.html"&gt; // Wide item
+			// Item content
+		&lt;/a&gt;
+		&lt;a class="item tall" href="path/to/work-page.html"&gt; // Tall item
+			// Item content
+		&lt;/a&gt;
+		&lt;a class="item" href="path/to/work-page.html"&gt;
+			// Item content
+		&lt;/a&gt;
+		&lt;a class="item" href="path/to/work-page.html"&gt;
+			// Item content
+		&lt;/a&gt;
+		... Etc.
+	&lt;/div&gt;
+&lt;/section&gt;</pre>
+              </div>
+            </div>
+            <div class="row mt-xl">
+              <div class="col-md-5">
+                <h2>Items</h2>
+                <p>Items are links that include the ".item" class. Within the link there's a thumbnail background and a caption div that's holding the title.</p>
+              </div>
+              <div class="col-md-6 col-md-offset-1">
+                <pre class="mt-md">// The item
+&lt;a class="item" href="path/to/work-page.html" style="background-image:url(/path/to/bg-image/);"&gt;
+	&lt;div class="caption"&gt;
+		&lt;h4&gt;Caption title&lt;/h4&gt; // Caption title
+	&lt;/div&gt;
+&lt;/a&gt;
+// Another item</pre>
+              </div>
+            </div>
+            <div class="row mt-xl">
+              <div class="col-md-5">
+                <h2>Full size portfolio</h2>
+                <p>Peel includes a full size portfolio to showcase your work in a different way. It also has a slightly different markup and includes a navigation list. The nav item should have the same index as the full item.</p>
+              </div>
+              <div class="col-md-6 col-md-offset-1">
+                <pre class="mt-md">// The grid container
+&lt;section class="fs-portfolio fadein"&gt;
+	&lt;ul class="fs-images"&gt;
+		// The item
+		&lt;li style="background-image: url(/path/to/your-background.jpg)"&gt; // Full item
+			&lt;h1&gt;Item title&lt;/h1&gt;
+		&lt;/a&gt;
+		... Etc.
+	&lt;/ul&gt;
+	&lt;ul class="fs-navigation"&gt;
+		&lt;li&gt;
+			&lt;a href="link/to/project.html"&gt;Link title&lt;/a&gt; // This item should have the same index as the full item.
+		&lt;/li&gt;
+		... Etc.
+	&lt;/ul&gt;
+	&lt;/div&gt;
+&lt;/section&gt;</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mt-xl mb-xl">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12"><span class="mr-lg">Next up</span><a href="tera-lightbox.html" class="btn btn-default">Tera Lightbox</a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="../../template/js/vendor.js"></script>
+    <script src="../../template/modules/titan-slider/titan-slider.js"></script>
+    <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+    <script src="../../template/js/functions.js"></script>
+  </body>
+</html>

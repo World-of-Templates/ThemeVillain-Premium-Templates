@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Peel - Responsive HTML5 Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=v1.0">
+  </head>
+  <body>
+    <div id="wrapper" class="animsition">
+      <div id="loader" class="fh">
+        <section class="vcenter">
+          <div class="container">
+            <div class="indicator"> <span class="number">00</span><span class="unit">%</span>
+              <div class="loadbar">
+                <div class="inner"></div>
+              </div>
+            </div>
+            <div class="img-count"><span class="loaded"></span><span class="description">images loaded</span></div>
+          </div>
+        </section>
+      </div>
+      <header id="main-header">
+        <div class="container">
+          <div class="grid">
+            <nav class="main-nav">
+              <div class="responsive-nav">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <ul class="nav-links">
+                <li class="col-1 brand"><a href="../index.html"><img alt="Peel" src="../../template/images/logo.svg" class="default"></a></li>
+                <li class="col-1 col-offset-1"><a href="../pages/get-started.html" class="nav-link undefined">Get started</a>
+                  <ul class="dropdown">
+                    <li><a href="../index.html" class="nav-link undefined">Home</a>
+                    </li>
+                    <li><a href="../pages/get-started.html" class="nav-link undefined">Get started</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-1 col-offset-1"><a href="../pages/template-structure.html" class="active nav-link undefined">Structure</a>
+                  <ul class="dropdown">
+                    <li><a href="../pages/template-structure.html" class="nav-link undefined">Template structure</a>
+                    </li>
+                    <li><a href="../pages/grid-structure.html" class="nav-link undefined">Grid</a>
+                    </li>
+                    <li><a href="../pages/portfolio-structure.html" class="nav-link undefined">Portfolio</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-1 col-offset-1"><a href="#" class="nav-link undefined">Modules</a>
+                  <ul class="dropdown">
+                    <li><a href="../pages/tera-lightbox.html" class="nav-link undefined">Tera Lightbox</a>
+                    </li>
+                    <li><a href="../pages/titan-slider.html" class="nav-link undefined">Titan Slider</a>
+                    </li>
+                    <li><a href="../pages/contact-form.html" class="nav-link undefined">Contact form</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="inner">
+        <section>
+          <div class="container">
+            <div class="grid">
+              <div class="col-8">
+                <h1>Portfolio structure</h1>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-8">
+                <h3>The portfolio grid</h3>
+              </div>
+              <div class="col-8 mb-xl">
+                <pre class="mt-md">&lt;div id="project-grid" class="masonry-grid"&gt; // The portfolio grid
+	&lt;a href="#" grid-item col-4&gt; // The grid item - half size
+		// Thumbnail and caption
+	&lt;/a&gt;
+&lt;/div&gt;</pre>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-8">
+                <h3>Set columns</h3>
+                <p>The columns are based on your grid item. A grid item respects the grid values, like col-4 for a half-sized item and col-2 for a fourth size of an item. You can also use col-8 for full size items.</p>
+              </div>
+              <div class="col-8 mb-xl">
+                <pre class="mt-md">&lt;div id="project-grid" class="masonry-grid"&gt; // The portfolio grid
+	&lt;a href="#" grid-item col-4&gt; // The grid item - half size
+		// Thumbnail and caption
+	&lt;/a&gt;
+&lt;/div&gt;   </pre>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-8">
+                <h3>Portfolio filters</h3>
+                <p>To use filterds, look for the nav element that has the ID "filters". It contains a list of filters, that each hold a link including the attribute "data-filter", which corresponds the class of the filterable item.</p>
+                <p>To make it work, add a class to your grid item and add this very class to the data-filter attribute of your filter item.</p>
+              </div>
+              <div class="col-8 mb-xl">      </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="../../template/js/vendor.js"></script>
+    <script src="../../template/modules/titan-slider/titan-slider.js"></script>
+    <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+    <script src="../../template/js/functions.js"></script>
+  </body>
+</html>

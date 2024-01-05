@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Peel - Responsive HTML5 Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=v1.0">
+  </head>
+  <body>
+    <div id="wrapper" class="animsition">
+      <div id="loader" class="fh">
+        <section class="vcenter">
+          <div class="container">
+            <div class="indicator"> <span class="number">00</span><span class="unit">%</span>
+              <div class="loadbar">
+                <div class="inner"></div>
+              </div>
+            </div>
+            <div class="img-count"><span class="loaded"></span><span class="description">images loaded</span></div>
+          </div>
+        </section>
+      </div>
+      <header id="main-header">
+        <div class="container">
+          <div class="grid">
+            <nav class="main-nav">
+              <div class="responsive-nav">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <ul class="nav-links">
+                <li class="col-1 brand"><a href="../index.html"><img alt="Peel" src="../../template/images/logo.svg" class="default"></a></li>
+                <li class="col-1 col-offset-1"><a href="../pages/get-started.html" class="nav-link undefined">Get started</a>
+                  <ul class="dropdown">
+                    <li><a href="../index.html" class="nav-link undefined">Home</a>
+                    </li>
+                    <li><a href="../pages/get-started.html" class="nav-link undefined">Get started</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-1 col-offset-1"><a href="../pages/template-structure.html" class="nav-link undefined">Structure</a>
+                  <ul class="dropdown">
+                    <li><a href="../pages/template-structure.html" class="nav-link undefined">Template structure</a>
+                    </li>
+                    <li><a href="../pages/grid-structure.html" class="nav-link undefined">Grid</a>
+                    </li>
+                    <li><a href="../pages/portfolio-structure.html" class="nav-link undefined">Portfolio</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="col-1 col-offset-1"><a href="#" class="active nav-link undefined">Modules</a>
+                  <ul class="dropdown">
+                    <li><a href="../pages/tera-lightbox.html" class="nav-link undefined">Tera Lightbox</a>
+                    </li>
+                    <li><a href="../pages/titan-slider.html" class="nav-link undefined">Titan Slider</a>
+                    </li>
+                    <li><a href="../pages/contact-form.html" class="nav-link undefined">Contact form</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div id="inner">
+        <section class="intro">
+          <div class="container mb-xl">
+            <div class="grid">
+              <div class="col-8">
+                <h1>Titan Slider</h1>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="medium">
+          <div class="container content">
+            <div class="grid">
+              <div class="col-8 mb-xl">
+                <h3>HTML Structure</h3>
+                <p>The Titan slider is lightweight and has an easy-to-use HTML structure, as follows:</p>
+                <pre>&lt;div class="titanSlider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li class="slide"&gt;
+			// Content slide 1
+		&lt;/li&gt;
+		&lt;li class="slide"&gt;
+			// Content slide 2
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;div&gt;      </pre>
+                <p>Knowing this, you can add as many slides as you want.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-8 mb-xl">
+                <h3>Calling the slider function</h3>
+                <p>Select the slider by it's ID or class, and call the titanSlider() function on the very bottom of the page, right before the closing body tag.</p>
+                <pre>$('#home-slider').titanSlider();</pre>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-8 mb-xl">
+                <h3>Slide background</h3>
+                <p>The slide background is actually a div object that owns a style property with the corresponding background image url. Just like this:</p>
+                <pre>// Inside .slide &gt; section.hero
+&lt;div class="bg" style="background-image:url(url-to-image)"&gt;&lt;/div&gt;  </pre>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-8 mb-xl"> 
+                <h3>Dark mode for dark backgrounds</h3>
+                <p>For light on dark slides, Be has a special class you can add. Add the <strong>".dark"</strong> class to the <strong>&lt;li class="slide"&gt;</strong> element inside the slider to change the colors of the text and header to white when the active slide has this class.</p>
+              </div>
+            </div>
+            <div class="grid">
+              <div class="col-8 mb-xl">
+                <h3> <span>Next up: </span><span><a href="../pages/contact-form.html" class="btn btn-default">Contact form</a></span></h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="../../template/js/vendor.js"></script>
+      <script src="../../template/modules/titan-slider/titan-slider.js"></script>
+      <script src="../../template/modules/tera-lightbox/tera-lightbox.js"></script>
+      <script src="../../template/js/functions.js"></script>
+    </div>
+  </body>
+</html>
